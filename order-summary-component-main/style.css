@@ -17,7 +17,7 @@
 
 .container-md {
   background: rgb(255, 255, 255);
-  max-width: 410px;
+  max-width: 380px;
   border-radius: 14px;
   box-shadow: 0 3px 60px rgba(56, 41, 224, 0.412);
 }
@@ -54,7 +54,7 @@ h2 {
 .plan {
   display: flex;
   margin: 10px 0;
-  padding: 1rem 0px;
+  padding: 1.6rem 0px;
   justify-content: space-around;
   background-color: hsl(225, 100%, 98%);
   border-radius: 14px;
