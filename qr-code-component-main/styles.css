@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
+  width: 1440px;
 }
 
 .card-container {

@@ -6,17 +6,18 @@
 }
 .container {
   width: 100%;
+  min-width: 100%;
   min-height: 100vh;
   align-items: center;
   display: flex;
   justify-content: center;
-  background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg)
-    no-repeat;
+  background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg)
+    repeat-x;
 }
 
 .container-md {
   background: rgb(255, 255, 255);
-  max-width: 400px;
+  max-width: 410px;
   border-radius: 14px;
   box-shadow: 0 3px 60px rgba(56, 41, 224, 0.412);
 }
