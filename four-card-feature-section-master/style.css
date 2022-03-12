@@ -39,10 +39,10 @@
   border-radius: 8px;
   display: flex;
   padding: 1rem;
-  min-width: 376px;
-  max-width: 376px;
-  min-height: 231px;
-  max-height: 231px;
+  min-width: 336px;
+  max-width: 336px;
+  min-height: 251px;
+  max-height: 251px;
 
   flex-direction: column;
   margin: 10px;
@@ -58,6 +58,7 @@
 .slogan {
   font-size: 35px;
   font-weight: 600;
+  color: hsl(234, 12%, 34%);
 }
 
 .desc {
@@ -73,6 +74,10 @@
   border-top: 4px solid hsl(34, 97%, 64%);
 }
 
+.item {
+  margin-top: 20px;
+}
+
 .blue {
   border-top: 4px solid hsl(180, 62%, 55%);
 }
@@ -83,7 +88,7 @@
 
 #ikon {
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 1rem;
   max-height: 85px;
   max-width: 85px;
@@ -94,14 +99,21 @@
   margin-bottom: auto;
 }
 
+.row-2 {
+  margin: 0 1.4rem;
+}
+
 .item-title {
   font-weight: 600;
   font-size: 22px;
+  margin: 10px;
+  color: hsl(234, 12%, 34%);
 }
 
 .item-desc {
   font-weight: 400;
   color: hsl(229, 6%, 66%);
+  margin: 0px 10px;
 }
 
 @media (max-width: 1212px) {
