@@ -82,10 +82,11 @@
 }
 
 #ikon {
-  display: block;
   margin-left: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
+  max-height: 85px;
+  max-width: 85px;
 }
 
 .margin {
@@ -101,4 +102,21 @@
 .item-desc {
   font-weight: 400;
   color: hsl(229, 6%, 66%);
+}
+
+@media (max-width: 1212px) {
+  .item,
+  .row,
+  .container-md,
+  .container,
+  .container-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .row {
+    width: 100%;
+  }
 }
