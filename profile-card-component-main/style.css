@@ -20,8 +20,8 @@
 }
 
 .container-md {
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 300px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +112,7 @@
 }
 
 .flex-container h2 {
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   color: hsl(229, 23%, 23%);
