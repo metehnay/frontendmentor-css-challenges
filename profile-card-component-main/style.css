@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-seriF;
+  font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -67,6 +67,9 @@
 
 .name {
   margin-top: 2.5rem;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .age {
@@ -96,8 +99,20 @@
 
 .flex-container p {
   opacity: 0.6;
+  font-size: 16px;
+  padding-top: 4px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .city {
-  opacity: 0.6;
+  opacity: 1;
+  padding-top: 10px;
+  color: hsl(0, 0%, 59%);
+}
+
+.flex-container h2 {
+  font-weight: 700;
+  text-align: center;
+  color: hsl(229, 23%, 23%);
 }
