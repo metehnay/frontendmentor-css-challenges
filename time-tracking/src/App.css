@@ -291,5 +291,6 @@
   .card-inline p {
     font-size: 18px;
     margin-left: 2rem;
+    display: flex;
   }
 }
