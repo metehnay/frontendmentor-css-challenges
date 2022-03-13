@@ -58,7 +58,7 @@ h2 {
   color: var(--light);
   font-weight: 800;
   text-align: center;
-  padding: 0 3.5rem;
+  padding: 0 1rem;
 }
 
 .dice {
@@ -83,6 +83,6 @@ h2 {
   position: absolute;
   top: 50%;
   margin-top: 6.8rem;
-  margin-left: 13.4rem;
+  margin-left: 13.2rem;
   align-items: center;
 }
