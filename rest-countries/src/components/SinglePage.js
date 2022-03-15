@@ -43,7 +43,7 @@ const SinglePage = () => {
                           Sub Region: <span>{card.subregion}</span>
                         </h5>
                         <h5>
-                          Capital: <span>{card.capital}</span>
+                          Capital: {card.capital && <span>{card.capital}</span>}
                         </h5>
                       </div>
                     </div>
@@ -52,7 +52,10 @@ const SinglePage = () => {
                         Top Level Domain: <span>{card.topLevelDomain}</span>
                       </h5>
                       <h5>
-                        Currencies: <span>{card.currencies[0].code}</span>
+                        Currencies:
+                        {card.currencies && (
+                          <span>{card.currencies[0].code}</span>
+                        )}
                       </h5>
                       <h5>
                         Languages: <span>{card.languages[0].name}</span>

@@ -9,12 +9,14 @@ import React, { useState, useEffect } from "react";
 
 function App() {
   const [country, setCountry] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("https://restcountries.com/v2/all");
       const resp = await response.json();
       const data = (setCountry(resp), console.log(resp));
+      setLoading(true);
     };
 
     fetchData();
@@ -23,6 +25,8 @@ function App() {
   const data = {
     country,
     setCountry,
+    loading,
+    setLoading,
   };
   return (
     <>

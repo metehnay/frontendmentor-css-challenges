@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 import { useContext, MainContext } from "./Context";
 import { Link } from "react-router-dom";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Container = () => {
   const [page, setPage] = useState(1);
   const [perPage] = useState(10);
   const [search, setSearch] = useState("");
-  const { country, setCountry } = useContext(MainContext);
+  const { country, setCountry, loading, setLoading } = useContext(MainContext);
 
   const paginate = (pageNumber) => setPage(pageNumber);
 
@@ -31,10 +32,11 @@ const Container = () => {
       <div className="container-fluid min-vh-100 customs">
         <div className="d-flex justify-content-between p-4 sa">
           <div className="form-control w-25 my-4 mx-4">
+            <AiOutlineSearch style={{ width: "20px", height: "20px" }} />
             <input
               type="text"
               placeholder="Search for a country..."
-              className="border-0 inputs "
+              className="border-0 inputs mx-4 "
               onChange={(e) => setSearch(e.target.value)}
             />
           </div>
@@ -55,35 +57,45 @@ const Container = () => {
         </div>
 
         <div className="d-flex p-4 mx-auto flex-wrap">
-          {currentPosts.map((coun) => (
+          {loading ? (
             <>
-              <Link to={`${coun.numericCode}`}>
-                <div className="d-flex flex-column mx-4 card my-4">
-                  <img src={coun.flag} className="imo" />
-                  <h2 className="px-3 py-3">
-                    {" "}
-                    <span style={{ fontWeight: "700", fontSize: "21px" }}>
-                      {coun.name}
-                    </span>
-                  </h2>
-                  <p className="mx-3">
-                    <span style={{ fontWeight: "600" }}>Population:</span>{" "}
-                    {coun.population.toLocaleString()}
-                  </p>
-                  <p className="mx-3">
-                    {" "}
-                    <span style={{ fontWeight: "600" }}>Region:</span>{" "}
-                    {coun.region}
-                  </p>
-                  <p className="mx-3">
-                    {" "}
-                    <span style={{ fontWeight: "600" }}>Capital:</span>{" "}
-                    {coun.capital}{" "}
-                  </p>
-                </div>
-              </Link>
+              {currentPosts.map((coun) => (
+                <>
+                  <Link to={`${coun.numericCode}`}>
+                    <div className="d-flex flex-column mx-4 card my-4">
+                      <img src={coun.flag} className="imo" />
+                      <h2 className="px-3 py-3">
+                        {" "}
+                        <span style={{ fontWeight: "700", fontSize: "21px" }}>
+                          {coun.name}
+                        </span>
+                      </h2>
+                      <p className="mx-3">
+                        <span style={{ fontWeight: "600" }}>Population:</span>{" "}
+                        {coun.population.toLocaleString()}
+                      </p>
+                      <p className="mx-3">
+                        {" "}
+                        <span style={{ fontWeight: "600" }}>Region:</span>{" "}
+                        {coun.region}
+                      </p>
+                      <p className="mx-3">
+                        {" "}
+                        <span style={{ fontWeight: "600" }}>Capital:</span>{" "}
+                        {coun.capital}{" "}
+                      </p>
+                    </div>
+                  </Link>
+                </>
+              ))}
             </>
-          ))}
+          ) : (
+            <>
+              <div className="loading d-flex justify-content-center mx-auto">
+                <h1 className="d-flex justify-content-center">Loading...</h1>
+              </div>
+            </>
+          )}
         </div>
         <div className="mx-auto d-flex justify-content-center py-2">
           <Pagination
