@@ -20,14 +20,20 @@
   background-color: var(--verygray);
 }
 
+.ccs {
+  font-weight: 700;
+}
+
 .imo {
-  max-width: 300px;
-  width: 300px;
-  height: 200px;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
 }
 
 .card {
-  width: 300px;
+  max-width: 330px;
+  min-width: 330px;
   border: none;
 }
 

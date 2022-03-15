@@ -31,7 +31,7 @@ const Container = () => {
     <>
       <div className="container-fluid min-vh-100 customs">
         <div className="d-flex justify-content-between p-4 sa">
-          <div className="form-control w-25 my-4 mx-4">
+          <div className="form-control w-25 my-4 mx-4 p-3">
             <AiOutlineSearch style={{ width: "20px", height: "20px" }} />
             <input
               type="text"
@@ -42,7 +42,7 @@ const Container = () => {
           </div>
           <div className="select my-4 mx-4">
             <select
-              className="form-select border-0"
+              className="form-select border-0 p-3 mx-3"
               aria-label="Default select example"
               onChange={(e) => setSearch(e.target.value)}
             >
@@ -56,7 +56,7 @@ const Container = () => {
           </div>
         </div>
 
-        <div className="d-flex p-4 mx-auto flex-wrap">
+        <div className="d-flex justify-content-center mx-auto flex-wrap ee">
           {loading ? (
             <>
               {currentPosts.map((coun) => (

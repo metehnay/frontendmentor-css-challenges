@@ -20,7 +20,7 @@ function App() {
       <div className="container">
         <div className="container-md">
           <div className="card">
-            <p className="neo">ADVICE # {loading ? `${advice.id}` : "124"}</p>
+            <p className="neo">ADVICE # {loading ? `${advice.id}` : "117"}</p>
             <h2>
               {loading
                 ? `${advice.advice}`
