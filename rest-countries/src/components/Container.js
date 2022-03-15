@@ -6,7 +6,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Container = () => {
   const [page, setPage] = useState(1);
-  const [perPage] = useState(10);
+  const [perPage] = useState(20);
   const [search, setSearch] = useState("");
   const { country, setCountry, loading, setLoading } = useContext(MainContext);
 
@@ -31,16 +31,16 @@ const Container = () => {
     <>
       <div className="container-fluid min-vh-100 customs">
         <div className="d-flex justify-content-between p-4 sa">
-          <div className="form-control w-25 my-4 mx-4 p-3">
+          <div className="form-control my-4 mx-4 p-3">
             <AiOutlineSearch style={{ width: "20px", height: "20px" }} />
             <input
               type="text"
               placeholder="Search for a country..."
-              className="border-0 inputs mx-4 "
+              className="border-0 inputs mx-4  "
               onChange={(e) => setSearch(e.target.value)}
             />
           </div>
-          <div className="select my-4 mx-4">
+          <div className="select my-4 fe">
             <select
               className="form-select border-0 p-3 mx-3"
               aria-label="Default select example"
@@ -56,7 +56,7 @@ const Container = () => {
           </div>
         </div>
 
-        <div className="d-flex justify-content-center mx-auto flex-wrap ee">
+        <div className="d-flex px-4 mx-auto flex-wrap ee">
           {loading ? (
             <>
               {currentPosts.map((coun) => (
