@@ -62,7 +62,7 @@ const App = () => {
             <div className="top">
               <p>{page} PAGEVIEWS</p>
               <div className="lo">
-                <h2>${dollar}</h2>
+                <h2>${dollar}.00</h2>
                 <p
                   style={{
                     fontSize: "13px",
@@ -86,7 +86,7 @@ const App = () => {
               />
             </div>
             <div className="billing">
-              <p>Monthly Billing</p>
+              <p className="year">Monthly Billing</p>
 
               <label className="switch">
                 <input
@@ -97,7 +97,7 @@ const App = () => {
                 />
                 <span className="toggle-slider" id={yearly && "tom"}></span>
               </label>
-              <p>Yearly Billing</p>
+              <p className="year">Yearly Billing</p>
               <p className="discount">25% discount</p>
             </div>
             <div className="border"></div>

@@ -69,8 +69,9 @@
 
 .lo > h2 {
   color: var(--text);
-  font-size: 29px;
+  font-size: 39px;
   padding: 10px 0px;
+  margin-right: 10px;
 }
 
 .top > p {
@@ -78,6 +79,7 @@
   color: gray;
   font-weight: 600;
   padding: 10px;
+  margin-left: 1rem;
 }
 
 .lo {
@@ -85,9 +87,10 @@
   gap: 4px;
 }
 .lo > p {
-  margin: auto auto;
+  margin: auto 0;
   padding: 10px 0;
   padding-right: 10px;
+  margin-right: 2rem;
 }
 .middle {
   padding: 0 3rem;
@@ -160,6 +163,13 @@ input#slider::-webkit-slider-thumb:hover {
   transition: all 0.3s ease;
 }
 
+.year {
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
 .toggle-slider:hover {
   background-color: hsl(174, 86%, 45%);
 }
@@ -203,7 +213,7 @@ ul li {
   padding: 8px 0;
   color: var(--text);
   font-weight: 600;
-  opacity: 0.8;
+  opacity: 0.7;
   font-size: 15px;
 }
 
@@ -274,4 +284,31 @@ ul li {
     hsl(224, 65%, 95%) 0%,
     hsl(224, 65%, 95%) 100%
   );
+}
+
+@media (max-width: 565px) {
+  .container-md {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .top {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin: auto auto;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .billing {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
 }
