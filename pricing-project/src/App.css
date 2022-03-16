@@ -36,7 +36,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(0deg, var(--white) 50%, var(--veryblue) 50%);
+  background: linear-gradient(0deg, #f9faff 50%, #f1f5fe 50%);
 }
 
 .container-h {
@@ -230,7 +230,7 @@ ul li {
   border: none;
   background-color: var(--text);
   color: var(--toggle);
-  opacity: 0.8;
+  opacity: 1;
   font-weight: 600;
   border-radius: 95px;
   padding: 12px 45px;
