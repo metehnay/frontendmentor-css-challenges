@@ -53,6 +53,7 @@ const App = () => {
   return (
     <>
       <div className="container">
+        <div className="bg"></div>
         <div className="row">
           <div className="container-h">
             <h4>Simple, traffic-based pricing</h4>
@@ -104,17 +105,17 @@ const App = () => {
             <div className="footer">
               <ul className="ul">
                 <li>
-                  <img src={icon} id="ikon" />
+                  <img src={icon} id="ikon" alt="ikon" />
                   Unlimited websites
                 </li>
                 <li>
                   {" "}
-                  <img src={icon} id="ikon" />
+                  <img src={icon} id="ikon" alt="ikon" />
                   100% data ownership
                 </li>
                 <li>
                   {" "}
-                  <img src={icon} id="ikon" />
+                  <img src={icon} id="ikon" alt="ikon" />
                   Email reports
                 </li>
               </ul>
